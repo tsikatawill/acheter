@@ -1,9 +1,9 @@
-import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Montserrat, Raleway } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const raleway = Raleway({ subsets: ["latin"] });
 const montserrat = Montserrat({
   subsets: ["latin"],
 });
@@ -23,6 +23,7 @@ export default function RootLayout({
       <body className={montserrat.className}>
         <Navbar hideOnHome={true} />
         {children}
+        <Footer />
       </body>
     </html>
   );

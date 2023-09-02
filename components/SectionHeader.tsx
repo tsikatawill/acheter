@@ -21,7 +21,7 @@ export default function SectionHeader({
           {subText}
         </CustomText>
       )}
-      <CustomHeading variant="h2" className="text-center">
+      <CustomHeading variant="h2" className="text-center mb-8">
         {mainText}
       </CustomHeading>
     </>
